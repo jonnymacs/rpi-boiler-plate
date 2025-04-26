@@ -1,0 +1,9 @@
+services:
+    custom-rpi-image:
+        build: .
+        privileged: true
+        stdin_open: true
+        tty: true
+        image: rpi-boiler-plate:latest
+        volumes:
+            - ./custom-rpi-image:/home/imagegen/custom-rpi-image

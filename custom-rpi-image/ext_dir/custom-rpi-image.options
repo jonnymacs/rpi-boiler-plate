@@ -1,0 +1,5 @@
+DEVICE_HOSTNAME=macmind
+device_user1=macmind
+device_user1pass=macmind
+wifi_ssid=""
+wifi_pw=""
