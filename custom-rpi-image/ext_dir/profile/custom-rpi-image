@@ -2,6 +2,7 @@
 
 debian/bookworm/arm64/base-apt
 rpi/debian/bookworm/apt
+customizations
 rpi/misc-utils
 rpi/base/essential
 rpi/boot-firmware
@@ -10,3 +11,4 @@ rpi/user-credentials
 rpi/misc-skel
 sys-apps/systemd-net-min
 app-misc/ca-certificates
+wifi-networking
