@@ -26,7 +26,6 @@ EOF
       cat << EOF >> $IMAGEMOUNTPATH/etc/fstab
 UUID=${BOOTUUID^^} /boot/firmware  vfat rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro 0 2
 EOF
-      cp $IMAGEMOUNTPATH/etc/fstab $OUTPUTPATH
       ;;
    BOOT)
       sed -i "s|root=\([^ ]*\)|root=UUID=${ROOTUUID}|" $IMAGEMOUNTPATH/cmdline.txt
