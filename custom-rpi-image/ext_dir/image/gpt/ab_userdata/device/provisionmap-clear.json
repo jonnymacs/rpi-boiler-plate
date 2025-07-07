@@ -1,0 +1,82 @@
+[
+   {
+      "attributes": {
+         "PMAPversion": "1.1.0",
+         "system_type": "slotted"
+      }
+   },
+   {
+      "partitions": [
+         {
+            "image": "config"
+         }
+      ]
+   },
+   {
+      "slots": {
+         "A": {
+            "partitions": [
+               {
+                  "image": "bootA",
+                  "static": {
+                     "uuid": "<BOOTA_UUID>",
+                     "role": "boot"
+                  }
+               }
+            ]
+         }
+      }
+   },
+   {
+      "slots": {
+         "B": {
+            "partitions": [
+               {
+                  "image": "bootB",
+                  "static": {
+                     "uuid": "<BOOTB_UUID>",
+                     "role": "boot"
+                  }
+               }
+            ]
+         }
+      }
+   },
+   {
+      "slots": {
+         "A": {
+            "partitions": [
+               {
+                  "image": "systemA",
+                  "static": {
+                     "uuid": "<SYSTEMA_UUID>",
+                     "role": "system"
+                  }
+               }
+            ]
+         }
+      }
+   },
+   {
+      "slots": {
+         "B": {
+            "partitions": [
+               {
+                  "image": "systemB",
+                  "static": {
+                     "uuid": "<SYSTEMB_UUID>",
+                     "role": "system"
+                  }
+               }
+            ]
+         }
+      }
+   },
+   {
+      "partitions": [
+         {
+            "image": "data"
+         }
+      ]
+   }
+]
